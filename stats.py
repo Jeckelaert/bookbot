@@ -6,7 +6,7 @@ def num_words(booktext):
 def char_count(book_text):
     char_dict = {}
     char_set = set()
-    for char in book_text:
+    for char in book_text.lower():
         if char in char_set:
             char_dict[char] += 1
         else:
